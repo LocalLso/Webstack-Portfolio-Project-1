@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+{% block body %}
+<div class="p-5 mb-4 bg-body-secondary rounded-3">
+	<div class="container-fluid py-5">
+		<h1 class="display-5 fw-bold">Our departments</h1>
+		<p class="col-md-8 fs-4">Learning made easy and sharing of content! Get the best experience through our app and dedicated intsructors.</p>
+		<button class="btn btn-primary btn-lg bg-dark border-secondary" type="button">Apply Now</button>
+	</div>
+</div>
+<div class="card-group py-5 px-1">
+	<div class="card bg-dark">
+		<div class="card-body text-light">
+			<h5 class="card-title">LGCSE</h5>
+			<p class="card-text">Within this category, find all materials needed to succeed in mathematics, from notes, tests, to solutions. Explore to get the best from top intructors.</p>
+			<a type="button" href="{{ url_for('lgcse') }}" class="card-link btn btn-outline-primary">LGCSE</a>
+		</div>
+	</div>
+	<div class="card bg-dark">
+		<div class="card-body text-light">
+			<h5 class="card-title">AS Level</h5>
+			<p class="card-text">Finding AS level content tough to learn, find all materials needed to succeed in mathematics, from notes, tests, to solutions. Explore to get the best from top intructors.</p>
+			<a type="button" href="#" class="card-link btn btn-outline-primary">AS Level</a>
+		</div>
+	</div>
+	<div class="card bg-dark">
+		<div class="card-body text-light">
+			<h5 class="card-title">A Level</h5>
+			<p class="card-text">You are almost there, just a little digging can get you the best results, find all materials needed to succeed in mathematics, from notes, tests, to solutions. Top content.</p>
+			<a type="button" href="#" class="card-link btn btn-outline-primary">A Level</a>
+		</div>
+	</div>
+</div>
+<div class="row align-items-md-stretch pb-5">
+	<div class="col-md-6">
+		<div class="h-100 p-5 text-bg-dark rounded-3">
+			<h2>Explore our laboratories</h2>
+			<p>In this ssection explore our labs from jonior to AS labs. The labs equips students with the reinforcement on science subjects.</p>
+			<button class="btn btn-outline-light btn-lg" type="button"><span class="material-symbols-outlined">
+				science
+			</span></button>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="h-100 p-5 bg-body-tertiary border rounded-3">
+			<h2>Events</h2>
+			<p>Find more on the events and notifications. Stay turned and keep yourself up to date with the schools calender.</p>
+			<button class="btn btn-outline-secondary" type="button"><span class="material-symbols-outlined">
+				notifications
+			</span></button>
+		</div>
+	</div>
+</div>
+{% endblock body %}
